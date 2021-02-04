@@ -1,0 +1,91 @@
+git init
+
+git config --global user.name "Polarapu Prasad"
+git config --global user.eamil "devopstraining2015@gmail.com"
+
+git config --list
+
+---------------------------------------------
+touch file1
+ls
+git status
+git add file1
+git status
+git commit -m "label" file
+git status
+git log
+git show cid
+
+touch file2 file3 file4 file5
+ls
+git status
+git add file2 file3 file4 file5
+or
+git add .
+or
+git add *
+or 
+git add -A
+
+git status
+git commit -m "label"
+git status
+git log
+
+
+git reset HEAD file-name  (staging to workspace)
+git reset --soft cid  (local to staging)
+git reset --mixed cid  (local to workspace)
+git reset --hard cid  (delete)
+======================================================
+
+git clone https://github.com/polarapu/batch-63.git
+ls
+cd batch-63
+touch prasad
+git add prasad
+git commit -m "sample commit" prasad
+git push
+
+mkdir dir1
+cd dir1
+touch f1 f2 f3
+cd ..
+git add dir1/f1
+git add *
+git commit -m "label"
+git push
+
+==========================================
+BRANCH:
+
+git branch
+git branch release1
+git branch
+git checkout release1
+
+git merge branch-name
+git push origin release1
+or
+git push path/of/c-repo branch-name
+
+git branch -d branch-name  (local machine)
+
+git push origin -d branch-name  (central repo)
+
+--------------------------------------------------------
+
+git clone https://github.com/polarapu/batch-63.git
+ls
+cd batch-63
+ls
+touch name
+git status
+git add .
+git status
+git commit -m "commit from name"
+git status
+git push
+git pull --rebase
+git push
+======================================
